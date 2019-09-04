@@ -1,10 +1,27 @@
 <style lang="less">
-  
+  .content{
+    width: 600rpx;
+    height: 360rpx;
+    background: red;
+  }
 </style>
 <template>
-  <view></view>
+  <view class="content"></view>
 </template>
 
 <script>
+import wepy from 'wepy'
+import Counter from '../components/counter'
 
+export default class Page extends wepy.page {
+    config = {}
+    components = {counter1: Counter}
+
+    data = {}
+    methods = {}
+
+    events = {}
+    onLoad() {}
+    // Other properties
+}
 </script>
