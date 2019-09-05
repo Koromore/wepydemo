@@ -21,7 +21,13 @@ setStore(store)
 
 export default class extends wepy.app {
   config = {
-    pages: ['pages/index', 'pages/logs'],
+    pages: [
+      'pages/index',
+      'pages/product',
+      'pages/address',
+      'pages/home',
+      'pages/logs'
+    ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
@@ -35,8 +41,16 @@ export default class extends wepy.app {
           text: '首页'
         },
         {
-          pagePath: 'pages/logs',
-          text: '日志'
+          pagePath: 'pages/product',
+          text: '产品'
+        },
+        {
+          pagePath: 'pages/address',
+          text: '地址'
+        },
+        {
+          pagePath: 'pages/home',
+          text: '我的'
         }
       ]
     }

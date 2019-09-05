@@ -1,9 +1,9 @@
 <style lang="less">
-  .content{
-    width: 600rpx;
-    height: 360rpx;
-    background: red;
-  }
+.content {
+  width: 600rpx;
+  height: 360rpx;
+  background: red;
+}
 </style>
 <template>
   <view class="content"></view>
@@ -14,14 +14,18 @@ import wepy from 'wepy'
 import Counter from '../components/counter'
 
 export default class Logs extends wepy.page {
-    config = {}
-    components = {counter1: Counter}
+  config = {
+    navigationBarTitleText: '登录'
+  }
+  components = {
+    counter1: Counter
+  }
 
-    data = {}
-    methods = {}
+  data = {}
+  methods = {}
 
-    events = {}
-    onLoad() {}
-    // Other properties
+  events = {}
+  onLoad() {}
+  // Other properties
 }
 </script>
