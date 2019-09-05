@@ -13,7 +13,7 @@
 import wepy from 'wepy'
 import Counter from '../components/counter'
 
-export default class Page extends wepy.page {
+export default class Logs extends wepy.page {
     config = {}
     components = {counter1: Counter}
 
